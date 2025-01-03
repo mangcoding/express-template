@@ -1,0 +1,17 @@
+<%- include('../partials/header'); %>
+<div class="bg-blue-700 py-5">
+    <div class="container mx-auto">
+        <h1 class="text-4xl text-center text-white">About US</h1>
+    </div>
+</div>
+<div class="content container mx-auto min-h-screen py-5">
+    <h2 class="text-2xl">Todo:</h2>
+    <ul class="mt-4">
+    <% todos.forEach(function(todo) { %>
+        <li>
+            <%= todo.name %>
+        </li>
+    <% }); %>
+    </ul>
+</div>
+<%- include('../partials/footer'); %>
